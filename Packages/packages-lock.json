@@ -56,19 +56,12 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.rider": {
-      "version": "1.2.1",
+      "version": "1.1.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.1"
       },
-      "url": "https://packages.unity.cn"
-    },
-    "com.unity.ide.visualstudio": {
-      "version": "2.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.vscode": {
@@ -200,13 +193,12 @@
       }
     },
     "net.peeweek.gameplay-ingredients": {
-      "version": "https://github.com/peeweek/net.peeweek.gameplay-ingredients.git#2019.3.0",
+      "version": "file:net.peeweek.gameplay-ingredients@604801ada543d20bc302f6310305fe29016d23d2",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.unity.cinemachine": "2.3.4"
-      },
-      "hash": "604801ada543d20bc302f6310305fe29016d23d2"
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

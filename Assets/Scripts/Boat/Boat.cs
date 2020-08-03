@@ -41,6 +41,16 @@ namespace BoatAttack
         private static readonly int LiveryPrimary = Shader.PropertyToID("_Color1");
         private static readonly int LiveryTrim = Shader.PropertyToID("_Color2");
 
+        // battery
+        public int maxPower = 100;
+        public int currentPower;
+
+        public Battery battery;
+
+        void Start() { 
+
+            currentPower = maxPower;           
+        }
         private void Awake()
 		{
             _spawnPosition = transform.localToWorldMatrix;
@@ -80,7 +90,15 @@ namespace BoatAttack
                 RaceUi.UpdatePlaceCounter(Place);
                 RaceUi.UpdateSpeed(engine.VelocityMag);
             }
+            // if(Input.GetKeyDown(KeyCode.Space)){
+            //     TakeDamage(20);
+            // }
         }
+
+        // void TakeDamage(int damage){
+        //     currentPower -= damage;
+        //     battery.setBattery(currentPower);
+        // }
 
         private void LateUpdate()
         {
